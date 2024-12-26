@@ -1,0 +1,241 @@
+/* Container */
+.cv-container {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 30px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    background-color: #f9f9f9;
+}
+
+/* Header */
+.cv-header {
+    display: flex; /* Sử dụng flexbox để căn chỉnh các phần tử ngang */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    justify-content: flex-start; /* Đảm bảo tất cả nội dung căn sang bên trái */
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.cv-photo img {
+    border: 5px solid #fff;
+    border-radius: 50%;
+    padding: 5px;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-right: 20px; /* Khoảng cách giữa ảnh và nội dung */
+}
+
+/* Phần nội dung trong header */
+.cv-header-content {
+    text-align: left; /* Căn chỉnh nội dung của phần header sang trái */
+}
+
+.cv-header-content h1 {
+    font-size: 45px;
+    margin: 5px 0;
+    text-align: left;
+}
+
+.cv-header-content h2 {
+    font-size: 30px;
+    font-weight: 300;
+    margin: 0;
+    text-align: center;
+}
+
+/* Body */
+.cv-body {
+    padding: 20px;
+}
+
+/* Điều chỉnh phần Objective */
+.cv-objective {
+    display: inline-block;
+    width: 48%; /* Mỗi phần chiếm 48% chiều rộng */
+    margin-right: 2%; /* Khoảng cách giữa hai phần */
+    vertical-align: top; /* Đảm bảo chúng không bị lệch theo chiều dọc */
+    text-align: left; /* Canh trái văn bản bên trong */
+    margin-bottom: 20px;
+}
+
+.cv-objective h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+    color: #333;
+    text-align: left;
+    width: 80%; /* Giảm chiều dài thanh ngang xuống còn 80% */
+}
+
+/* Điều chỉnh phần Contact */
+.cv-contact {
+    display: inline-block;
+    width: 48%; /* Vẫn giữ chiều rộng của Contact */
+    margin-left: 2%; /* Xích qua phải một chút */
+    vertical-align: top;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.cv-contact h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+    color: #333;
+    text-align: left;
+}
+
+/* Điều chỉnh khoảng cách cho các phần bên dưới */
+.cv-objective p, .cv-contact p {
+    margin: 5px 0;
+    font-size: 16px;
+    text-align: left;
+}
+
+/* Đảm bảo các phần có thể tương thích với các màn hình nhỏ */
+@media (max-width: 768px) {
+    .cv-objective, .cv-contact {
+        width: 100%; /* Chuyển sang một cột khi màn hình nhỏ */
+        margin-right: 0;
+    }
+}
+
+/* Các phần mục trong CV */
+.cv-education, .cv-experiences, .cv-project, .cv-achievement {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+    text-align: left; /* Canh trái nội dung trong các phần này */
+}
+
+.cv-education h3, .cv-experiences h3, .cv-project h3, .cv-achievement h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+    color: #333;
+}
+
+.cv-education p, .cv-experiences p, .cv-project p, .cv-achievement p {
+    margin: 8px 0;
+    text-align: left; /* Canh trái tất cả các đoạn văn trong các mục */
+}
+
+.cv-achievement p {
+    font-weight: bold;
+    color: #2c7d9d;
+}
+
+/* Điều chỉnh phần Skill */
+.cv-skill {
+    display: inline-block;
+    width: 48%; /* Mỗi phần chiếm 48% chiều rộng */
+    margin-right: 2%; /* Khoảng cách giữa hai phần */
+    vertical-align: top; /* Đảm bảo chúng không bị lệch theo chiều dọc */
+    text-align: left; /* Canh trái văn bản bên trong */
+}
+
+.cv-skill h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+    color: #333;
+    text-align: left;
+    width: 80%; /* Giảm chiều dài thanh ngang xuống còn 80% */
+}
+
+/* Điều chỉnh phần Language */
+.cv-language {
+    display: inline-block;
+    width: 48%; /* Vẫn giữ chiều rộng của Language */
+    margin-left: 2%; /* Xích qua phải một chút */
+    vertical-align: top;
+    text-align: left;
+}
+
+.cv-language h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+    color: #333;
+    text-align: left;
+}
+
+/* Điều chỉnh khoảng cách cho các phần bên dưới */
+.cv-skill p, .cv-language div {
+    margin: 5px 0;
+    font-size: 16px;
+    text-align: left;
+}
+
+/* Đảm bảo các phần có thể tương thích với các màn hình nhỏ */
+@media (max-width: 768px) {
+    .cv-skill, .cv-language {
+        width: 100%; /* Chuyển sang một cột khi màn hình nhỏ */
+        margin-right: 0;
+    }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .cv-header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cv-header-content h1 {
+        font-size: 24px;
+    }
+
+    .cv-header-content h2 {
+        font-size: 18px;
+    }
+
+    .cv-container {
+        margin: 15px;
+        padding: 10px;
+    }
+}
+
+/* Phần Project */
+.cv-project-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    text-align: left; /* Canh trái nội dung của các item trong project */
+}
+
+.cv-project-item h4 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.cv-project-item ul {
+    margin-left: 20px;
+}
+
+.cv-project-item li {
+    margin-bottom: 5px;
+}
+
+.cv-project-item p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}

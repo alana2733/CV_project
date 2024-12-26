@@ -1,5 +1,5 @@
 import React from "react";
-import "./CV_project.css";
+import "./CV_project.css"
 
 const CV_project = () => {
     return (
@@ -46,10 +46,49 @@ const CV_project = () => {
                 </div>
 
                 <div className="cv-project">
-                    <h3>PROJECT</h3>
-                    <p><strong>Microcontroller subject</strong></p>
-                    <p><strong>21VLTH - KHTN Group</strong></p>
-                </div>
+    <h3>PROJECT</h3>
+    
+    {/* Project 1: Stopwatch using PIC16F887 */}
+    <div className="cv-project-item">
+        <h4>Stopwatch using PIC16F887</h4>
+        <p><strong>Customer:</strong> Stopwatch using PIC16F887</p>
+        <p><strong>Description:</strong> This project involves designing a stopwatch using the PIC16F887 microcontroller. It includes two main sections: ticks and seconds, which are displayed on 7-segment LEDs. The key focus was ensuring accurate real-time operation of the device.</p>
+        <p><strong>Team Size:</strong> 4</p>
+        <p><strong>My Position:</strong> Developer</p>
+        <p><strong>My Responsibilities:</strong> 
+            <ul>
+                <li>Analyzed and designed the electric circuit for the stopwatch.</li>
+                <li>Performed testing on the circuits to ensure functionality.</li>
+                <li>Developed code for the PIC16F887 microcontroller using PIC-C Compiler.</li>
+            </ul>
+        </p>
+        <p><strong>Technologies Used:</strong> PIC16F887, PIC-C Compiler, Proteus</p>
+    </div>
+
+    {/* Project 2: Smart Street Lights */}
+    <div className="cv-project-item">
+        <h4>Smart Street Lights</h4>
+        <p><strong>Customer:</strong> Smart Street Lights</p>
+        <p><strong>Description:</strong> The project is aimed at designing an automatic street light system that uses sensors to detect objects, which then triggers the lights to illuminate. Additionally, it integrates infrared cameras for surveillance and data collection, enhancing energy efficiency and safety.</p>
+        <p><strong>Team Size:</strong> 6</p>
+        <p><strong>My Position:</strong> Developer</p>
+        <p><strong>My Responsibilities:</strong> 
+            <ul>
+                <li>Analyzed and designed the electric circuits for the streetlight system.</li>
+                <li>Tested circuits to ensure proper functionality and performance.</li>
+                <li>Assembled the circuits and completed the hardware for the product prototype.</li>
+            </ul>
+        </p>
+        <p><strong>Technologies Used:</strong> Arduino Uno R3, Ultrasonic Sensor HC-SR04, Resistor, LED Lights</p>
+        <p><strong>Project Achievements:</strong> 
+            <ul>
+                <li>The project achieved a top 10 ranking in the DigiTrans Smart City competition.</li>
+                <li>Successfully reduced energy consumption by optimizing sensor-driven automation.</li>
+            </ul>
+        </p>
+    </div>
+</div>
+
 
                 <div className="cv-achievement">
                     <h3>ACHIEVEMENT</h3>
