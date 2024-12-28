@@ -35,6 +35,7 @@
 /* Phần nội dung trong header */
 .cv-header-content {
     text-align: left; /* Căn chỉnh nội dung của phần header sang trái */
+    padding-left: 50px;
 }
 
 .cv-header-content h1 {
@@ -95,10 +96,17 @@
 }
 
 /* Điều chỉnh khoảng cách cho các phần bên dưới */
-.cv-objective p, .cv-contact p {
+.cv-contact p {
     margin: 5px 0;
     font-size: 16px;
-    text-align: left;
+    text-align: justify;
+}
+
+.cv-objective p {
+    text-align: justify; /* Căn đều văn bản */
+    letter-spacing: -1px; /* Điều chỉnh khoảng cách giữa các chữ */
+    line-height: 1.6; /* Điều chỉnh khoảng cách giữa các dòng */
+    padding-right: 25px;
 }
 
 /* Đảm bảo các phần có thể tương thích với các màn hình nhỏ */
@@ -132,9 +140,20 @@
     text-align: left; /* Canh trái tất cả các đoạn văn trong các mục */
 }
 
-.cv-achievement p {
-    font-weight: bold;
-    color: #2c7d9d;
+.education-item {
+    display: flex;
+    justify-content: space-between; /* Đẩy hai phần sang hai bên */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    margin-bottom: 5px;
+}
+
+.education-item p {
+    margin: 0; /* Xóa khoảng cách mặc định */
+}
+
+.time-period {
+    font-style: italic; /* Làm nổi bật thời gian */
+    color: #050170; /* Màu chữ xám nhạt */
 }
 
 /* Điều chỉnh phần Skill */

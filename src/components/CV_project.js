@@ -19,9 +19,9 @@ const CV_project = () => {
             
             <section className="cv-body">
                 <div className="cv-objective">
-                    <h3>OBJECTIVE</h3>
+                    <h3>ABOUT ME</h3>
                     <p>
-                        anything else
+                    I am a Physics student with a strong passion for programming and technology. Through my studies and personal projects, I have cultivated analytical thinking and problem-solving skills, which I believe are essential for tackling real-world challenges. My goal is to continuously learn and grow, contributing to the success of a dynamic company while further developing my expertise in software and innovation.
                     </p>
                 </div>
 
@@ -34,13 +34,19 @@ const CV_project = () => {
 
                 <div className="cv-education">
                     <h3>EDUCATION</h3>
-                    <p><strong>Currently studying at University of Science</strong></p>
+                    <div className="education-item">
+                        <p><strong>Currently studying at University of Science</strong></p>
+                        <p className="time-period">2021 - 2025</p>
+                    </div>
                     <p>Faculty of Physics & Engineering Physics</p>
                 </div>
 
                 <div className="cv-experiences">
                     <h3>EXPERIENCE</h3>
-                    <p><strong>Internship at RevoBricks LLC</strong></p>
+                    <div className="education-item">
+                        <p><strong>Internship at RevoBricks LLC</strong></p>
+                        <p className="time-period">01/07/2024 - 31/08/2024</p>
+                    </div>
                     <p>Redesign the schematic</p>
                     <p>Circuit board design</p>
                 </div>
@@ -89,10 +95,12 @@ const CV_project = () => {
     </div>
 </div>
 
-
                 <div className="cv-achievement">
                     <h3>ACHIEVEMENT</h3>
-                    <p>Top 10/50 DigiTrans Smart City competitions</p>
+                    <div className="education-item">
+                        <p>Top 10/50 DigiTrans Smart City competitions</p>
+                        <p className="time-period">09/2023 - 11/2023</p>
+                    </div>
                 </div>
 
                 <div className="cv-skill">
